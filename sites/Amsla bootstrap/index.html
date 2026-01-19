@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>125 مثال عملي لـ Bootstrap 5</title>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .example-title {
+            background: linear-gradient(45deg, #007bff, #6610f2);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .section-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            margin: 30px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center py-5 bg-primary text-white">
+                    <h1 class="display-4">125 مثال عملي لـ Bootstrap 5</h1>
+                    <p class="lead">مجموعة شاملة من الأمثلة العملية لجميع مكونات Bootstrap 5.3.3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+
+        <!-- قسم الأزرار -->
+        <div class="section-header">
+            <h2><i class="bi bi-cursor-fill"></i> الأزرار (Buttons)</h2>
+        </div>
+
+        <!-- مثال 1: الأزرار الأساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 1: الأزرار الأساسية بجميع الألوان</div>
+            <button type="button" class="btn btn-primary me-2">Primary</button>
+            <button type="button" class="btn btn-secondary me-2">Secondary</button>
+            <button type="button" class="btn btn-success me-2">Success</button>
+            <button type="button" class="btn btn-danger me-2">Danger</button>
+            <button type="button" class="btn btn-warning me-2">Warning</button>
+            <button type="button" class="btn btn-info me-2">Info</button>
+            <button type="button" class="btn btn-light me-2">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+
+        <!-- مثال 2: أزرار بحدود -->
+        <div class="mb-5">
+            <div class="example-title">مثال 2: أزرار بحدود (Outline Buttons)</div>
+            <button type="button" class="btn btn-outline-primary me-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary me-2">Secondary</button>
+            <button type="button" class="btn btn-outline-success me-2">Success</button>
+            <button type="button" class="btn btn-outline-danger me-2">Danger</button>
+            <button type="button" class="btn btn-outline-warning me-2">Warning</button>
+            <button type="button" class="btn btn-outline-info me-2">Info</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+
+        <!-- مثال 3: أحجام الأزرار -->
+        <div class="mb-5">
+            <div class="example-title">مثال 3: أحجام الأزرار المختلفة</div>
+            <button type="button" class="btn btn-primary btn-lg me-2">زر كبير</button>
+            <button type="button" class="btn btn-primary me-2">زر عادي</button>
+            <button type="button" class="btn btn-primary btn-sm">زر صغير</button>
+        </div>
+
+        <!-- مثال 4: أزرار مع أيقونات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 4: أزرار مع أيقونات</div>
+            <button type="button" class="btn btn-primary me-2">
+                <i class="bi bi-download"></i> تحميل
+            </button>
+            <button type="button" class="btn btn-success me-2">
+                <i class="bi bi-check-circle"></i> موافق
+            </button>
+            <button type="button" class="btn btn-danger me-2">
+                <i class="bi bi-trash"></i> حذف
+            </button>
+            <button type="button" class="btn btn-warning">
+                <i class="bi bi-exclamation-triangle"></i> تحذير
+            </button>
+        </div>
+
+        <!-- مثال 5: مجموعة أزرار -->
+        <div class="mb-5">
+            <div class="example-title">مثال 5: مجموعة أزرار (Button Group)</div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary">الأول</button>
+                <button type="button" class="btn btn-outline-primary">الثاني</button>
+                <button type="button" class="btn btn-outline-primary">الثالث</button>
+            </div>
+        </div>
+
+        <!-- مثال 6: أزرار بعرض كامل -->
+        <div class="mb-5">
+            <div class="example-title">مثال 6: أزرار بعرض كامل</div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">زر بعرض كامل</button>
+                <button class="btn btn-outline-secondary" type="button">زر آخر بعرض كامل</button>
+            </div>
+        </div>
+
+        <!-- مثال 7: أزرار معطلة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 7: أزرار معطلة</div>
+            <button type="button" class="btn btn-primary me-2" disabled>زر معطل</button>
+            <button type="button" class="btn btn-secondary me-2" disabled>زر معطل آخر</button>
+            <a class="btn btn-primary disabled" role="button" aria-disabled="true">رابط معطل</a>
+        </div>
+
+        <!-- مثال 8: أزرار تبديل -->
+        <div class="mb-5">
+            <div class="example-title">مثال 8: أزرار تبديل (Toggle Buttons)</div>
+            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+            <label class="btn btn-outline-primary me-2" for="btn-check">تبديل</label>
+            
+            <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn-check-2">مفعل</label>
+        </div>
+
+        <!-- قسم الجداول -->
+        <div class="section-header">
+            <h2><i class="bi bi-table"></i> الجداول (Tables)</h2>
+        </div>
+
+        <!-- مثال 9: جدول أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 9: جدول أساسي</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">الاسم</th>
+                        <th scope="col">البريد الإلكتروني</th>
+                        <th scope="col">المدينة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>أحمد محمد</td>
+                        <td>ahmed@example.com</td>
+                        <td>الرياض</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>فاطمة علي</td>
+                        <td>fatima@example.com</td>
+                        <td>جدة</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>محمد سالم</td>
+                        <td>mohammed@example.com</td>
+                        <td>الدمام</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- مثال 10: جدول مخطط -->
+        <div class="mb-5">
+            <div class="example-title">مثال 10: جدول مخطط (Striped Table)</div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">المنتج</th>
+                        <th scope="col">السعر</th>
+                        <th scope="col">الكمية</th>
+                        <th scope="col">المجموع</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>لابتوب</td>
+                        <td>2500 ريال</td>
+                        <td>2</td>
+                        <td>5000 ريال</td>
+                    </tr>
+                    <tr>
+                        <td>ماوس</td>
+                        <td>50 ريال</td>
+                        <td>5</td>
+                        <td>250 ريال</td>
+                    </tr>
+                    <tr>
+                        <td>لوحة مفاتيح</td>
+                        <td>150 ريال</td>
+                        <td>3</td>
+                        <td>450 ريال</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- مثال 11: جدول بحدود -->
+        <div class="mb-5">
+            <div class="example-title">مثال 11: جدول بحدود (Bordered Table)</div>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">اليوم</th>
+                        <th scope="col">الحدث</th>
+                        <th scope="col">الوقت</th>
+                        <th scope="col">المكان</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>الاثنين</td>
+                        <td>اجتماع فريق</td>
+                        <td>10:00 ص</td>
+                        <td>قاعة الاجتماعات</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>عرض تقديمي</td>
+                        <td>2:00 م</td>
+                        <td>القاعة الكبرى</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- مثال 12: جدول صغير -->
+        <div class="mb-5">
+            <div class="example-title">مثال 12: جدول صغير (Small Table)</div>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">الرمز</th>
+                        <th scope="col">اسم الشركة</th>
+                        <th scope="col">السعر</th>
+                        <th scope="col">التغيير</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AAPL</td>
+                        <td>Apple Inc.</td>
+                        <td>$150.25</td>
+                        <td class="text-success">+2.5%</td>
+                    </tr>
+                    <tr>
+                        <td>GOOGL</td>
+                        <td>Alphabet Inc.</td>
+                        <td>$2,750.80</td>
+                        <td class="text-danger">-1.2%</td>
+                    </tr>
+                    <tr>
+                        <td>MSFT</td>
+                        <td>Microsoft Corp.</td>
+                        <td>$305.15</td>
+                        <td class="text-success">+0.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- مثال 13: جدول ملون -->
+        <div class="mb-5">
+            <div class="example-title">مثال 13: جدول ملون (Colored Table)</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">الحالة</th>
+                        <th scope="col">الوصف</th>
+                        <th scope="col">التاريخ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>مكتمل</td>
+                        <td>تم إنجاز المشروع بنجاح</td>
+                        <td>2024-01-15</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>قيد التنفيذ</td>
+                        <td>المشروع في مرحلة التطوير</td>
+                        <td>2024-01-20</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>متأخر</td>
+                        <td>المشروع متأخر عن الموعد</td>
+                        <td>2024-01-25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- قسم النماذج -->
+        <div class="section-header">
+            <h2><i class="bi bi-ui-checks"></i> النماذج (Forms)</h2>
+        </div>
+
+        <!-- مثال 14: نموذج أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 14: نموذج أساسي</div>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">تذكرني</label>
+                </div>
+                <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+            </form>
+        </div>
+
+        <!-- مثال 15: حقول إدخال مختلفة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 15: حقول إدخال مختلفة</div>
+            <form>
+                <div class="mb-3">
+                    <label for="textInput" class="form-label">نص عادي</label>
+                    <input type="text" class="form-control" id="textInput" placeholder="أدخل النص هنا">
+                </div>
+                <div class="mb-3">
+                    <label for="numberInput" class="form-label">رقم</label>
+                    <input type="number" class="form-control" id="numberInput" placeholder="أدخل رقم">
+                </div>
+                <div class="mb-3">
+                    <label for="dateInput" class="form-label">تاريخ</label>
+                    <input type="date" class="form-control" id="dateInput">
+                </div>
+                <div class="mb-3">
+                    <label for="timeInput" class="form-label">وقت</label>
+                    <input type="time" class="form-control" id="timeInput">
+                </div>
+                <div class="mb-3">
+                    <label for="colorInput" class="form-label">لون</label>
+                    <input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c">
+                </div>
+            </form>
+        </div>
+
+        <!-- مثال 16: قائمة منسدلة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 16: قائمة منسدلة (Select)</div>
+            <form>
+                <div class="mb-3">
+                    <label for="countrySelect" class="form-label">اختر البلد</label>
+                    <select class="form-select" id="countrySelect">
+                        <option selected>اختر البلد...</option>
+                        <option value="sa">السعودية</option>
+                        <option value="ae">الإمارات</option>
+                        <option value="eg">مصر</option>
+                        <option value="jo">الأردن</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="multiSelect" class="form-label">اختيار متعدد</label>
+                    <select class="form-select" id="multiSelect" multiple>
+                        <option value="1">الخيار الأول</option>
+                        <option value="2">الخيار الثاني</option>
+                        <option value="3">الخيار الثالث</option>
+                        <option value="4">الخيار الرابع</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- مثال 17: أزرار راديو وصناديق اختيار -->
+        <div class="mb-5">
+            <div class="example-title">مثال 17: أزرار راديو وصناديق اختيار</div>
+            <form>
+                <fieldset class="mb-3">
+                    <legend class="form-label">اختر الجنس:</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">ذكر</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">أنثى</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="mb-3">
+                    <legend class="form-label">اختر الهوايات:</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="reading" id="reading">
+                        <label class="form-check-label" for="reading">القراءة</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="sports" id="sports">
+                        <label class="form-check-label" for="sports">الرياضة</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="music" id="music">
+                        <label class="form-check-label" for="music">الموسيقى</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- مثال 18: منطقة نص -->
+        <div class="mb-5">
+            <div class="example-title">مثال 18: منطقة نص (Textarea)</div>
+            <form>
+                <div class="mb-3">
+                    <label for="messageTextarea" class="form-label">رسالتك</label>
+                    <textarea class="form-control" id="messageTextarea" rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="commentsTextarea" class="form-label">تعليقات إضافية</label>
+                    <textarea class="form-control" id="commentsTextarea" rows="2"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- مثال 19: رفع ملف -->
+        <div class="mb-5">
+            <div class="example-title">مثال 19: رفع ملف (File Upload)</div>
+            <form>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">اختر ملف</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">اختر ملفات متعددة</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+                <div class="mb-3">
+                    <label for="formFileDisabled" class="form-label">رفع ملف معطل</label>
+                    <input class="form-control" type="file" id="formFileDisabled" disabled>
+                </div>
+            </form>
+        </div>
+
+        <!-- مثال 20: نموذج بأحجام مختلفة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 20: نموذج بأحجام مختلفة</div>
+            <form>
+                <div class="mb-3">
+                    <label for="largeInput" class="form-label">حقل كبير</label>
+                    <input class="form-control form-control-lg" type="text" id="largeInput" placeholder="حقل إدخال كبير">
+                </div>
+                <div class="mb-3">
+                    <label for="normalInput" class="form-label">حقل عادي</label>
+                    <input class="form-control" type="text" id="normalInput" placeholder="حقل إدخال عادي">
+                </div>
+                <div class="mb-3">
+                    <label for="smallInput" class="form-label">حقل صغير</label>
+                    <input class="form-control form-control-sm" type="text" id="smallInput" placeholder="حقل إدخال صغير">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap 5.3.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Watermark -->
+<div style="position:fixed;bottom:20px;right:20px;background:rgba(0,0,0,0.85);color:#fff;padding:12px 24px;border-radius:50px;z-index:999999;font-family:'Segoe UI',sans-serif;font-size:14px;backdrop-filter:blur(10px);box-shadow:0 8px 32px rgba(0,0,0,0.3);transition:all 0.3s ease;">
+    Powered by YourDomain
+</div>
+
+</body>
+</html>
+
+
+        <!-- قسم التنبيهات -->
+        <div class="section-header">
+            <h2><i class="bi bi-exclamation-triangle"></i> التنبيهات (Alerts)</h2>
+        </div>
+
+        <!-- مثال 21: تنبيهات أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 21: تنبيهات أساسية بجميع الألوان</div>
+            <div class="alert alert-primary" role="alert">
+                تنبيه أساسي - معلومات مهمة!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                تنبيه ثانوي - معلومات إضافية
+            </div>
+            <div class="alert alert-success" role="alert">
+                تنبيه نجاح - تم إنجاز العملية بنجاح!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                تنبيه خطر - حدث خطأ ما!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                تنبيه تحذير - انتبه لهذا الأمر
+            </div>
+            <div class="alert alert-info" role="alert">
+                تنبيه معلوماتي - معلومة مفيدة
+            </div>
+        </div>
+
+        <!-- مثال 22: تنبيهات مع أيقونات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 22: تنبيهات مع أيقونات</div>
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <div>تم حفظ البيانات بنجاح!</div>
+            </div>
+            <div class="alert alert-warning d-flex align-items-center" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <div>تحذير: يرجى مراجعة البيانات المدخلة</div>
+            </div>
+            <div class="alert alert-danger d-flex align-items-center" role="alert">
+                <i class="bi bi-x-circle-fill me-2"></i>
+                <div>خطأ: فشل في الاتصال بالخادم</div>
+            </div>
+        </div>
+
+        <!-- مثال 23: تنبيهات قابلة للإغلاق -->
+        <div class="mb-5">
+            <div class="example-title">مثال 23: تنبيهات قابلة للإغلاق</div>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>تحذير!</strong> هذا تنبيه يمكن إغلاقه.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>معلومة:</strong> يمكنك إغلاق هذا التنبيه أيضاً.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+
+        <!-- مثال 24: تنبيهات مع روابط -->
+        <div class="mb-5">
+            <div class="example-title">مثال 24: تنبيهات مع روابط</div>
+            <div class="alert alert-primary" role="alert">
+                تنبيه مع <a href="#" class="alert-link">رابط مهم</a>. انقر عليه للمزيد من المعلومات.
+            </div>
+            <div class="alert alert-success" role="alert">
+                تم إنجاز العملية! <a href="#" class="alert-link">عرض التفاصيل</a>
+            </div>
+        </div>
+
+        <!-- قسم البطاقات -->
+        <div class="section-header">
+            <h2><i class="bi bi-card-text"></i> البطاقات (Cards)</h2>
+        </div>
+
+        <!-- مثال 25: بطاقة أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 25: بطاقة أساسية</div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">عنوان البطاقة</h5>
+                    <p class="card-text">هذا نص تجريبي للبطاقة. يمكن أن يحتوي على معلومات مفيدة ومهمة.</p>
+                    <a href="#" class="btn btn-primary">اذهب إلى مكان ما</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 26: بطاقة مع صورة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 26: بطاقة مع صورة</div>
+            <div class="card" style="width: 18rem;">
+                <svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>صورة تجريبية</title>
+                    <rect width="100%" height="100%" fill="#868e96"/>
+                    <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">صورة 286x180</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">بطاقة مع صورة</h5>
+                    <p class="card-text">هذا مثال على بطاقة تحتوي على صورة في الأعلى ونص في الأسفل.</p>
+                    <a href="#" class="btn btn-primary">المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 27: مجموعة بطاقات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 27: مجموعة بطاقات</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">المنتج الأول</h5>
+                            <p class="card-text">وصف المنتج الأول مع تفاصيل مهمة.</p>
+                            <p class="card-text"><small class="text-muted">آخر تحديث منذ 3 دقائق</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">المنتج الثاني</h5>
+                            <p class="card-text">وصف المنتج الثاني مع معلومات إضافية.</p>
+                            <p class="card-text"><small class="text-muted">آخر تحديث منذ 5 دقائق</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">المنتج الثالث</h5>
+                            <p class="card-text">وصف المنتج الثالث مع تفاصيل شاملة.</p>
+                            <p class="card-text"><small class="text-muted">آخر تحديث منذ 10 دقائق</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 28: بطاقة مع رأس وتذييل -->
+        <div class="mb-5">
+            <div class="example-title">مثال 28: بطاقة مع رأس وتذييل</div>
+            <div class="card">
+                <div class="card-header">
+                    رأس البطاقة المميز
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">عنوان خاص</h5>
+                    <p class="card-text">محتوى البطاقة مع نص تفصيلي ومعلومات مفيدة للمستخدم.</p>
+                    <a href="#" class="btn btn-primary">إجراء</a>
+                </div>
+                <div class="card-footer text-muted">
+                    تذييل البطاقة - منذ يومين
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 29: بطاقات ملونة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 29: بطاقات ملونة</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-header">بطاقة أساسية</div>
+                        <div class="card-body">
+                            <h5 class="card-title">عنوان البطاقة الأساسية</h5>
+                            <p class="card-text">محتوى البطاقة مع خلفية زرقاء.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-header">بطاقة نجاح</div>
+                        <div class="card-body">
+                            <h5 class="card-title">عنوان بطاقة النجاح</h5>
+                            <p class="card-text">محتوى البطاقة مع خلفية خضراء.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم شريط التنقل -->
+        <div class="section-header">
+            <h2><i class="bi bi-menu-button-wide"></i> شريط التنقل (Navbar)</h2>
+        </div>
+
+        <!-- مثال 30: شريط تنقل أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 30: شريط تنقل أساسي</div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">الشعار</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">المنتجات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الخدمات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">اتصل بنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- مثال 31: شريط تنقل داكن -->
+        <div class="mb-5">
+            <div class="example-title">مثال 31: شريط تنقل داكن</div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-house-fill"></i> الموقع
+                    </a>
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#">الرئيسية</a>
+                        <a class="nav-link" href="#">حول</a>
+                        <a class="nav-link" href="#">الخدمات</a>
+                        <a class="nav-link" href="#">التواصل</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- مثال 32: شريط تنقل مع قائمة منسدلة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 32: شريط تنقل مع قائمة منسدلة</div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">الشركة</a>
+                    <div class="navbar-nav">
+                        <a class="nav-link text-white" href="#">الرئيسية</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                                المنتجات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">منتج 1</a></li>
+                                <li><a class="dropdown-item" href="#">منتج 2</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">جميع المنتجات</a></li>
+                            </ul>
+                        </div>
+                        <a class="nav-link text-white" href="#">اتصل بنا</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- مثال 33: شريط تنقل مع بحث -->
+        <div class="mb-5">
+            <div class="example-title">مثال 33: شريط تنقل مع بحث</div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">الموقع</a>
+                    <div class="navbar-nav me-auto">
+                        <a class="nav-link" href="#">الرئيسية</a>
+                        <a class="nav-link" href="#">المقالات</a>
+                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="بحث...">
+                        <button class="btn btn-outline-success" type="submit">بحث</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <!-- قسم الفوتر -->
+        <div class="section-header">
+            <h2><i class="bi bi-layout-text-window-reverse"></i> الفوتر (Footer)</h2>
+        </div>
+
+        <!-- مثال 34: فوتر بسيط -->
+        <div class="mb-5">
+            <div class="example-title">مثال 34: فوتر بسيط</div>
+            <footer class="bg-dark text-white text-center py-3">
+                <div class="container">
+                    <p>&copy; 2024 اسم الشركة. جميع الحقوق محفوظة.</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- مثال 35: فوتر مع أعمدة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 35: فوتر مع أعمدة</div>
+            <footer class="bg-primary text-white py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>عن الشركة</h5>
+                            <p>نحن شركة رائدة في مجال التكنولوجيا نقدم أفضل الحلول.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>روابط مفيدة</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">الرئيسية</a></li>
+                                <li><a href="#" class="text-white">الخدمات</a></li>
+                                <li><a href="#" class="text-white">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>تواصل معنا</h5>
+                            <p><i class="bi bi-envelope"></i> info@company.com</p>
+                            <p><i class="bi bi-telephone"></i> +966 12 345 6789</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p>&copy; 2024 جميع الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- مثال 36: فوتر مع وسائل التواصل -->
+        <div class="mb-5">
+            <div class="example-title">مثال 36: فوتر مع وسائل التواصل الاجتماعي</div>
+            <footer class="bg-dark text-white py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h5>ابق على تواصل</h5>
+                            <p>تابعنا على وسائل التواصل الاجتماعي للحصول على آخر الأخبار والتحديثات.</p>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <h5>تابعنا</h5>
+                            <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                            <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                            <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                            <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- قسم التبويبات -->
+        <div class="section-header">
+            <h2><i class="bi bi-folder-fill"></i> التبويبات (Tabs)</h2>
+        </div>
+
+        <!-- مثال 37: تبويبات أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 37: تبويبات أساسية</div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">الرئيسية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">الملف الشخصي</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab">اتصل بنا</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel">
+                    <div class="p-3">
+                        <h4>محتوى الرئيسية</h4>
+                        <p>هذا هو محتوى تبويب الرئيسية. يمكن أن يحتوي على أي نوع من المحتوى.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel">
+                    <div class="p-3">
+                        <h4>الملف الشخصي</h4>
+                        <p>معلومات الملف الشخصي تظهر هنا مع تفاصيل المستخدم.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel">
+                    <div class="p-3">
+                        <h4>اتصل بنا</h4>
+                        <p>معلومات الاتصال ونموذج التواصل يظهر في هذا التبويب.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 38: تبويبات عمودية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 38: تبويبات عمودية</div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">الرئيسية</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab">الملف الشخصي</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab">الرسائل</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab">الإعدادات</button>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
+                            <h4>الرئيسية</h4>
+                            <p>محتوى الصفحة الرئيسية مع معلومات عامة.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+                            <h4>الملف الشخصي</h4>
+                            <p>تفاصيل الملف الشخصي والمعلومات الشخصية.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel">
+                            <h4>الرسائل</h4>
+                            <p>صندوق الرسائل والمحادثات.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel">
+                            <h4>الإعدادات</h4>
+                            <p>إعدادات الحساب والتفضيلات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الأكوردين -->
+        <div class="section-header">
+            <h2><i class="bi bi-list-ul"></i> الأكوردين (Accordion)</h2>
+        </div>
+
+        <!-- مثال 39: أكوردين أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 39: أكوردين أساسي</div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            السؤال الأول
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            هذا هو محتوى الإجابة على السؤال الأول. يمكن أن يحتوي على نص طويل ومعلومات مفصلة.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            السؤال الثاني
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            إجابة السؤال الثاني مع تفاصيل إضافية ومعلومات مفيدة للمستخدم.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            السؤال الثالث
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            محتوى الإجابة الثالثة مع شرح وافي ومعلومات شاملة حول الموضوع.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 40: أكوردين بدون حدود -->
+        <div class="mb-5">
+            <div class="example-title">مثال 40: أكوردين بدون حدود</div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                            عنصر الأكوردين الأول
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">محتوى العنصر الأول بدون حدود.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                            عنصر الأكوردين الثاني
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">محتوى العنصر الثاني مع تصميم نظيف.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم النوافذ المنبثقة -->
+        <div class="section-header">
+            <h2><i class="bi bi-window"></i> النوافذ المنبثقة (Modals)</h2>
+        </div>
+
+        <!-- مثال 41: نافذة منبثقة أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 41: نافذة منبثقة أساسية</div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                فتح النافذة المنبثقة
+            </button>
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">عنوان النافذة</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>هذا محتوى النافذة المنبثقة. يمكن أن يحتوي على نص أو نماذج أو أي محتوى آخر.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                            <button type="button" class="btn btn-primary">حفظ التغييرات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 42: نافذة منبثقة كبيرة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 42: نافذة منبثقة كبيرة</div>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#largeModal">
+                نافذة كبيرة
+            </button>
+            
+            <div class="modal fade" id="largeModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">نافذة كبيرة</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>العمود الأول</h6>
+                                    <p>محتوى العمود الأول مع معلومات مفصلة.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>العمود الثاني</h6>
+                                    <p>محتوى العمود الثاني مع تفاصيل إضافية.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 43: نافذة منبثقة مع نموذج -->
+        <div class="mb-5">
+            <div class="example-title">مثال 43: نافذة منبثقة مع نموذج</div>
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#formModal">
+                نموذج في نافذة
+            </button>
+            
+            <div class="modal fade" id="formModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">تسجيل مستخدم جديد</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="userName" class="form-label">اسم المستخدم</label>
+                                    <input type="text" class="form-control" id="userName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="userEmail" class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" id="userEmail">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="userPassword" class="form-label">كلمة المرور</label>
+                                    <input type="password" class="form-control" id="userPassword">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                            <button type="button" class="btn btn-primary">تسجيل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 44: نافذة تأكيد -->
+        <div class="mb-5">
+            <div class="example-title">مثال 44: نافذة تأكيد</div>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                حذف العنصر
+            </button>
+            
+            <div class="modal fade" id="confirmModal" tabindex="-1">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">تأكيد الحذف</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>هل أنت متأكد من رغبتك في حذف هذا العنصر؟</p>
+                            <p class="text-muted">لا يمكن التراجع عن هذا الإجراء.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                            <button type="button" class="btn btn-danger">حذف</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- قسم Carousel -->
+        <div class="section-header">
+            <h2><i class="bi bi-images"></i> سلايدر الصور (Carousel)</h2>
+        </div>
+
+        <!-- مثال 45: Carousel أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 45: سلايدر صور أساسي</div>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>الشريحة الأولى</title>
+                            <rect width="100%" height="100%" fill="#777"/>
+                            <text x="50%" y="50%" fill="#555" dy=".3em" text-anchor="middle">الشريحة الأولى</text>
+                        </svg>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>الشريحة الثانية</title>
+                            <rect width="100%" height="100%" fill="#666"/>
+                            <text x="50%" y="50%" fill="#444" dy=".3em" text-anchor="middle">الشريحة الثانية</text>
+                        </svg>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>الشريحة الثالثة</title>
+                            <rect width="100%" height="100%" fill="#555"/>
+                            <text x="50%" y="50%" fill="#333" dy=".3em" text-anchor="middle">الشريحة الثالثة</text>
+                        </svg>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- مثال 46: Carousel مع مؤشرات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 46: سلايدر مع مؤشرات</div>
+            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>صورة 1</title>
+                            <rect width="100%" height="100%" fill="#007bff"/>
+                            <text x="50%" y="50%" fill="white" dy=".3em" text-anchor="middle">صورة 1</text>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>العنوان الأول</h5>
+                            <p>وصف الشريحة الأولى مع معلومات مفيدة.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>صورة 2</title>
+                            <rect width="100%" height="100%" fill="#28a745"/>
+                            <text x="50%" y="50%" fill="white" dy=".3em" text-anchor="middle">صورة 2</text>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>العنوان الثاني</h5>
+                            <p>وصف الشريحة الثانية مع تفاصيل إضافية.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>صورة 3</title>
+                            <rect width="100%" height="100%" fill="#dc3545"/>
+                            <text x="50%" y="50%" fill="white" dy=".3em" text-anchor="middle">صورة 3</text>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>العنوان الثالث</h5>
+                            <p>وصف الشريحة الثالثة مع محتوى شامل.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- قسم القوائم المنسدلة -->
+        <div class="section-header">
+            <h2><i class="bi bi-list"></i> القوائم المنسدلة (Dropdowns)</h2>
+        </div>
+
+        <!-- مثال 47: قائمة منسدلة أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 47: قائمة منسدلة أساسية</div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    قائمة منسدلة
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">إجراء</a></li>
+                    <li><a class="dropdown-item" href="#">إجراء آخر</a></li>
+                    <li><a class="dropdown-item" href="#">شيء آخر هنا</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- مثال 48: قوائم منسدلة ملونة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 48: قوائم منسدلة ملونة</div>
+            <div class="btn-group me-2" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    أساسي
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">خيار 1</a></li>
+                    <li><a class="dropdown-item" href="#">خيار 2</a></li>
+                </ul>
+            </div>
+            <div class="btn-group me-2" role="group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                    نجاح
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">خيار 1</a></li>
+                    <li><a class="dropdown-item" href="#">خيار 2</a></li>
+                </ul>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+                    خطر
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">خيار 1</a></li>
+                    <li><a class="dropdown-item" href="#">خيار 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- مثال 49: قائمة منسدلة مع فواصل -->
+        <div class="mb-5">
+            <div class="example-title">مثال 49: قائمة منسدلة مع فواصل</div>
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    قائمة مع فواصل
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">إجراء</a></li>
+                    <li><a class="dropdown-item" href="#">إجراء آخر</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">شيء منفصل</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">رابط منفصل</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- قسم مجموعات القوائم -->
+        <div class="section-header">
+            <h2><i class="bi bi-list-ul"></i> مجموعات القوائم (List Groups)</h2>
+        </div>
+
+        <!-- مثال 50: مجموعة قائمة أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 50: مجموعة قائمة أساسية</div>
+            <ul class="list-group">
+                <li class="list-group-item">عنصر أول</li>
+                <li class="list-group-item">عنصر ثاني</li>
+                <li class="list-group-item">عنصر ثالث</li>
+                <li class="list-group-item">عنصر رابع</li>
+                <li class="list-group-item">عنصر خامس</li>
+            </ul>
+        </div>
+
+        <!-- مثال 51: مجموعة قائمة نشطة ومعطلة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 51: مجموعة قائمة نشطة ومعطلة</div>
+            <ul class="list-group">
+                <li class="list-group-item active">عنصر نشط</li>
+                <li class="list-group-item">عنصر ثاني</li>
+                <li class="list-group-item">عنصر ثالث</li>
+                <li class="list-group-item disabled">عنصر معطل</li>
+                <li class="list-group-item">عنصر خامس</li>
+            </ul>
+        </div>
+
+        <!-- مثال 52: مجموعة قائمة ملونة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 52: مجموعة قائمة ملونة</div>
+            <ul class="list-group">
+                <li class="list-group-item">عنصر افتراضي</li>
+                <li class="list-group-item list-group-item-primary">عنصر أساسي</li>
+                <li class="list-group-item list-group-item-secondary">عنصر ثانوي</li>
+                <li class="list-group-item list-group-item-success">عنصر نجاح</li>
+                <li class="list-group-item list-group-item-danger">عنصر خطر</li>
+                <li class="list-group-item list-group-item-warning">عنصر تحذير</li>
+                <li class="list-group-item list-group-item-info">عنصر معلوماتي</li>
+            </ul>
+        </div>
+
+        <!-- مثال 53: مجموعة قائمة مع شارات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 53: مجموعة قائمة مع شارات</div>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    الرسائل الواردة
+                    <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    المهام المعلقة
+                    <span class="badge bg-warning rounded-pill">2</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    الإشعارات
+                    <span class="badge bg-success rounded-pill">1</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- قسم شبكة Bootstrap -->
+        <div class="section-header">
+            <h2><i class="bi bi-grid-3x3"></i> شبكة Bootstrap (Grid System)</h2>
+        </div>
+
+        <!-- مثال 54: شبكة أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 54: شبكة أساسية - أعمدة متساوية</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-3 bg-primary text-white text-center">عمود 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 bg-secondary text-white text-center">عمود 2</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 bg-success text-white text-center">عمود 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 55: شبكة بأحجام محددة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 55: شبكة بأحجام محددة</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="p-3 bg-info text-white text-center">عمود كبير (8/12)</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-warning text-center">عمود صغير (4/12)</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="p-3 bg-danger text-white text-center">نصف العرض (6/12)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-dark text-white text-center">نصف العرض (6/12)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 56: شبكة متجاوبة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 56: شبكة متجاوبة</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-3 bg-primary text-white text-center mb-2">متجاوب 1</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-3 bg-secondary text-white text-center mb-2">متجاوب 2</div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="p-3 bg-success text-white text-center mb-2">متجاوب 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 57: شبكة مع إزاحة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 57: شبكة مع إزاحة (Offset)</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="p-3 bg-info text-white text-center">عمود عادي</div>
+                    </div>
+                    <div class="col-md-4 offset-md-4">
+                        <div class="p-3 bg-warning text-center">عمود مع إزاحة</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="p-3 bg-danger text-white text-center">عمود في المنتصف</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 58: شبكة متداخلة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 58: شبكة متداخلة</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="p-3 bg-primary text-white">
+                            <h6>عمود خارجي</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="p-2 bg-light text-dark text-center">متداخل 1</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-2 bg-light text-dark text-center">متداخل 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-secondary text-white text-center">عمود جانبي</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- قسم أشرطة التقدم -->
+        <div class="section-header">
+            <h2><i class="bi bi-bar-chart"></i> أشرطة التقدم (Progress Bars)</h2>
+        </div>
+
+        <!-- مثال 59: شريط تقدم أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 59: شريط تقدم أساسي</div>
+            <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+            </div>
+        </div>
+
+        <!-- مثال 60: شريط تقدم مع نص -->
+        <div class="mb-5">
+            <div class="example-title">مثال 60: شريط تقدم مع نص</div>
+            <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 25%">25%</div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 40%">40% مكتمل</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%">60% من المهمة</div>
+            </div>
+        </div>
+
+        <!-- مثال 61: أشرطة تقدم ملونة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 61: أشرطة تقدم ملونة</div>
+            <div class="progress mb-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"></div>
+            </div>
+            <div class="progress mb-2">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%"></div>
+            </div>
+            <div class="progress mb-2">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
+            </div>
+        </div>
+
+        <!-- مثال 62: شريط تقدم متعدد -->
+        <div class="mb-5">
+            <div class="example-title">مثال 62: شريط تقدم متعدد</div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 15%"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 30%"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 20%"></div>
+            </div>
+        </div>
+
+        <!-- مثال 63: شريط تقدم مخطط -->
+        <div class="mb-5">
+            <div class="example-title">مثال 63: شريط تقدم مخطط</div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"></div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%"></div>
+            </div>
+        </div>
+
+        <!-- قسم المؤشرات الدوارة -->
+        <div class="section-header">
+            <h2><i class="bi bi-arrow-clockwise"></i> المؤشرات الدوارة (Spinners)</h2>
+        </div>
+
+        <!-- مثال 64: مؤشرات دوارة أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 64: مؤشرات دوارة أساسية</div>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-border text-primary ms-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-border text-success ms-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-border text-danger ms-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+        </div>
+
+        <!-- مثال 65: مؤشرات دوارة نامية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 65: مؤشرات دوارة نامية</div>
+            <div class="spinner-grow" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-grow text-primary ms-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-grow text-success ms-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-grow text-warning ms-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+        </div>
+
+        <!-- مثال 66: مؤشرات دوارة صغيرة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 66: مؤشرات دوارة صغيرة</div>
+            <div class="spinner-border spinner-border-sm me-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <div class="spinner-grow spinner-grow-sm me-3" role="status">
+                <span class="visually-hidden">جاري التحميل...</span>
+            </div>
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                جاري التحميل...
+            </button>
+        </div>
+
+        <!-- قسم الشارات -->
+        <div class="section-header">
+            <h2><i class="bi bi-award"></i> الشارات (Badges)</h2>
+        </div>
+
+        <!-- مثال 67: شارات أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 67: شارات أساسية</div>
+            <h1>عنوان مع <span class="badge bg-secondary">جديد</span></h1>
+            <h2>عنوان مع <span class="badge bg-primary">مميز</span></h2>
+            <h3>عنوان مع <span class="badge bg-success">مكتمل</span></h3>
+            <h4>عنوان مع <span class="badge bg-danger">عاجل</span></h4>
+            <h5>عنوان مع <span class="badge bg-warning text-dark">تحذير</span></h5>
+            <h6>عنوان مع <span class="badge bg-info">معلومة</span></h6>
+        </div>
+
+        <!-- مثال 68: شارات مستديرة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 68: شارات مستديرة (Pills)</div>
+            <span class="badge rounded-pill bg-primary me-2">أساسي</span>
+            <span class="badge rounded-pill bg-secondary me-2">ثانوي</span>
+            <span class="badge rounded-pill bg-success me-2">نجاح</span>
+            <span class="badge rounded-pill bg-danger me-2">خطر</span>
+            <span class="badge rounded-pill bg-warning text-dark me-2">تحذير</span>
+            <span class="badge rounded-pill bg-info me-2">معلومة</span>
+            <span class="badge rounded-pill bg-dark">داكن</span>
+        </div>
+
+        <!-- مثال 69: شارات مع أزرار -->
+        <div class="mb-5">
+            <div class="example-title">مثال 69: شارات مع أزرار</div>
+            <button type="button" class="btn btn-primary me-2">
+                الإشعارات <span class="badge bg-secondary">4</span>
+            </button>
+            <button type="button" class="btn btn-success me-2">
+                الرسائل <span class="badge bg-light text-dark">9</span>
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                السلة <span class="badge bg-danger">2</span>
+            </button>
+        </div>
+
+        <!-- مثال 70: شارات موضعية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 70: شارات موضعية</div>
+            <button type="button" class="btn btn-primary position-relative me-3">
+                البريد الوارد
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                </span>
+            </button>
+            <button type="button" class="btn btn-outline-secondary position-relative">
+                الملف الشخصي
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">رسائل جديدة</span>
+                </span>
+            </button>
+        </div>
+
+        <!-- قسم التلميحات -->
+        <div class="section-header">
+            <h2><i class="bi bi-chat-square-text"></i> التلميحات (Tooltips)</h2>
+        </div>
+
+        <!-- مثال 71: تلميحات أساسية -->
+        <div class="mb-5">
+            <div class="example-title">مثال 71: تلميحات أساسية</div>
+            <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="تلميح في الأعلى">
+                تلميح أعلى
+            </button>
+            <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="right" title="تلميح على اليمين">
+                تلميح يمين
+            </button>
+            <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="تلميح في الأسفل">
+                تلميح أسفل
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="تلميح على اليسار">
+                تلميح يسار
+            </button>
+        </div>
+
+        <!-- قسم النوافذ المنبثقة الصغيرة -->
+        <div class="section-header">
+            <h2><i class="bi bi-chat-dots"></i> النوافذ المنبثقة الصغيرة (Popovers)</h2>
+        </div>
+
+        <!-- مثال 72: نوافذ منبثقة صغيرة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 72: نوافذ منبثقة صغيرة</div>
+            <button type="button" class="btn btn-lg btn-danger me-2" data-bs-toggle="popover" title="عنوان النافذة" data-bs-content="محتوى النافذة المنبثقة الصغيرة مع معلومات إضافية.">
+                انقر للنافذة المنبثقة
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" title="نافذة علوية" data-bs-content="هذه نافذة منبثقة تظهر في الأعلى.">
+                نافذة علوية
+            </button>
+        </div>
+
+        <!-- قسم مسار التنقل -->
+        <div class="section-header">
+            <h2><i class="bi bi-signpost"></i> مسار التنقل (Breadcrumbs)</h2>
+        </div>
+
+        <!-- مثال 73: مسار تنقل أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 73: مسار تنقل أساسي</div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="#">المكتبة</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">البيانات</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- مثال 74: مسار تنقل مع أيقونات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 74: مسار تنقل مع أيقونات</div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#"><i class="bi bi-house-fill"></i> الرئيسية</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#"><i class="bi bi-folder-fill"></i> المنتجات</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#"><i class="bi bi-tag-fill"></i> الفئة</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <i class="bi bi-file-text-fill"></i> المنتج الحالي
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- قسم ترقيم الصفحات -->
+        <div class="section-header">
+            <h2><i class="bi bi-123"></i> ترقيم الصفحات (Pagination)</h2>
+        </div>
+
+        <!-- مثال 75: ترقيم صفحات أساسي -->
+        <div class="mb-5">
+            <div class="example-title">مثال 75: ترقيم صفحات أساسي</div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- مثال 76: ترقيم صفحات مع حالات -->
+        <div class="mb-5">
+            <div class="example-title">مثال 76: ترقيم صفحات مع حالات</div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">السابق</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">التالي</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- مثال 77: ترقيم صفحات بأحجام مختلفة -->
+        <div class="mb-5">
+            <div class="example-title">مثال 77: ترقيم صفحات بأحجام مختلفة</div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Page navigation">
+                <ul class="pagination pagination-sm">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+        </div>
+
