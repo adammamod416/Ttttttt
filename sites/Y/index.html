@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="كتاب كيف تتذكر كل ما تذاكره - دليل شامل لتقوية الذاكرة">
+<title>كتاب كيف تتذكر كل ما تذاكره</title>
+
+<style>
+/* ===== CSS Reset & Base Styles ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--primary:#6366f1;
+--secondary:#ec4899;
+--dark:#0f172a;
+--text:#1e293b;
+--muted:#64748b;
+--border:#e2e8f0;
+}
+html{scroll-behavior:smooth}
+body{
+font-family:Segoe UI,Tahoma;
+line-height:1.6;
+color:var(--text);
+background:#fff;
+overflow-x:hidden;
+}
+
+/* ===== Navbar ===== */
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+background:#fff;
+border-bottom:1px solid var(--border);
+box-shadow:0 2px 10px rgba(0,0,0,.05)
+}
+.nav-container{
+max-width:1200px;
+margin:auto;
+padding:1rem 2rem;
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+.logo{
+font-size:1.5rem;
+font-weight:bold;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+color:transparent
+}
+.nav-links{
+list-style:none;
+display:flex;
+gap:2rem
+}
+.nav-links a{
+text-decoration:none;
+color:var(--text);
+font-weight:500
+}
+.cta-btn{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff!important;
+padding:.6rem 1.4rem;
+border-radius:30px
+}
+
+/* ===== Hamburger ===== */
+.hamburger{display:none;flex-direction:column;gap:6px;cursor:pointer}
+.hamburger span{width:25px;height:3px;background:#000}
+
+/* ===== Hero ===== */
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#f8fafc,#e0e7ff,#fce7f3);
+padding:2rem
+}
+.hero-content{
+max-width:1200px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:3rem;
+align-items:center
+}
+.hero h1{
+font-size:3rem;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+color:transparent
+}
+.hero p{color:var(--muted);margin:1rem 0}
+.btn{
+padding:1rem 2rem;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:600
+}
+.btn-primary{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff
+}
+.btn-secondary{
+background:transparent;
+border:2px solid var(--primary);
+color:var(--primary)
+}
+.book-cover{
+max-width:100%;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,.2)
+}
+
+/* ===== Sections ===== */
+section{padding:5rem 2rem}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-header h2{font-size:2.2rem}
+
+/* ===== Features ===== */
+.features-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:2rem
+}
+.feature-card{
+background:#fff;
+padding:2rem;
+border-radius:15px;
+border:1px solid var(--border);
+text-align:center
+}
+
+/* ===== CTA ===== */
+.cta-section{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff;
+text-align:center
+}
+.price{font-size:3rem;font-weight:bold}
+
+/* ===== Footer ===== */
+.footer{
+background:var(--dark);
+color:#fff;
+text-align:center;
+padding:2rem
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+.hero-content{grid-template-columns:1fr}
+.hamburger{display:flex}
+.nav-links{
+position:absolute;
+top:70px;
+left:0;right:0;
+background:#fff;
+flex-direction:column;
+display:none
+}
+.nav-links.active{display:flex}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo">📚 الكتاب الذهبي</div>
+<div class="hamburger" id="hamburger">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#hero">الرئيسية</a></li>
+<li><a href="#features">المميزات</a></li>
+<li><a href="#about">عن الكتاب</a></li>
+<li><a href="#buy" class="cta-btn">اشتري الآن</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero" id="hero">
+<div class="hero-content">
+<div>
+<h1>كيف تتذكر كل ما تذاكره</h1>
+<p>دليل عملي لتقوية الذاكرة والحفظ دون نسيان</p>
+<button class="btn btn-primary" onclick="buyBook()">اشتري الآن - $4.99</button>
+<button class="btn btn-secondary" onclick="scrollToSection('features')">اعرف أكثر</button>
+</div>
+<div>
+<img src="https://via.placeholder.com/400x550" class="book-cover">
+</div>
+</div>
+</section>
+
+<section id="features">
+<div class="section-header">
+<h2>ماذا ستحصل عليه؟</h2>
+</div>
+<div class="features-grid">
+<div class="feature-card">🧠 تقوية الذاكرة</div>
+<div class="feature-card">🔬 طرق علمية</div>
+<div class="feature-card">🎯 منع النسيان</div>
+</div>
+</section>
+
+<section id="about">
+<div class="section-header">
+<h2>عن الكتاب</h2>
+<p>كتاب عملي مناسب للطلاب والمحترفين</p>
+</div>
+</section>
+
+<section id="buy" class="cta-section">
+<h2>ابدأ الآن</h2>
+<div class="price">$4.99</div>
+<button class="btn btn-primary" onclick="buyBook()">شراء الكتاب</button>
+</section>
+
+<footer class="footer">
+<p>© 2024 جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+/* ===== JS ===== */
+const hamburger=document.getElementById("hamburger");
+const navLinks=document.getElementById("navLinks");
+
+hamburger.onclick=()=>{
+hamburger.classList.toggle("active");
+navLinks.classList.toggle("active");
+};
+
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+
+function buyBook(){
+window.location.href="https://muhibelkotob.gumroad.com/l/tlcvtr";
+}
+</script>
+
+</body>
+</html>
