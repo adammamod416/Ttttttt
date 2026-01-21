@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحميل Masry.css تلقائي</title>
+<!-- مكتبة JSZip لإنشاء ZIP على المتصفح -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<style>
+    /* ===== تصميم احترافي ===== */
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: rgba(0,0,0,0.7);
+        padding: 40px 30px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #ff4b2b;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #ff416c;
+    }
+    @media (max-width: 500px) {
+        .container { padding: 30px 20px; }
+        h1 { font-size: 1.5rem; }
+        .btn { padding: 12px 20px; font-size: 0.9rem; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>تحميل Masry.css</h1>
+  <p>سيبدأ التحميل تلقائيًا. إذا لم يبدأ، اضغط على الزر أدناه.</p>
+  <button id="downloadBtn" class="btn">تحميل الآن</button>
+</div>
+
+<script>
+async function downloadFile() {
+    try {
+        // جلب المحتوى من الرابط الخارجي
+        const response = await fetch('https://masrycss-demo.vercel.app/masry.css');
+        if(!response.ok) throw new Error('فشل جلب الملف');
+        const content = await response.text();
+
+        // إنشاء ZIP وادراج Masry.css
+        const zip = new JSZip();
+        zip.file("Masry.css", content);
+
+        // تحويل إلى Blob وتحميله
+        const blob = await zip.generateAsync({type:"blob"});
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "Masry.css.zip";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+    } catch(e) {
+        console.error("حدث خطأ:", e);
+        alert("فشل التحميل تلقائيًا، اضغط الزر للتحميل يدوياً");
+    }
+}
+
+// تحميل تلقائي عند فتح الصفحة
+window.onload = downloadFile;
+
+// زر احتياطي
+document.getElementById("downloadBtn").addEventListener("click", downloadFile);
+</script>
+
+</body>
+</html>
