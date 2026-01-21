@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحميل Masry.css</title>
+<style>
+  /* ===== إعدادات الصفحة ===== */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: rgba(0,0,0,0.6);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #ff416c;
+  }
+
+  /* متجاوب */
+  @media (max-width: 500px) {
+    .container {
+      padding: 30px 20px;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .btn {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>تحميل Masry.css</h1>
+  <p>سيبدأ التحميل تلقائيًا خلال ثوانٍ. إذا لم يبدأ، اضغط على الزر أدناه.</p>
+  <a id="downloadBtn" class="btn" href="https://masrycss-demo.vercel.app/masry.css" download>تحميل الآن</a>
+</div>
+
+<script>
+// تحميل تلقائي عند فتح الصفحة
+window.onload = function () {
+  const link = document.createElement("a");
+  link.href = "https://masrycss-demo.vercel.app/masry.css";
+  link.download = "Masry.css";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+</script>
+
+</body>
+</html>
